@@ -1,82 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Test</title>
+  <title>Страж</title>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/app.min.css">
+  <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
 </head>
 <body>
+  <header class="header">
+    <div class="header-slider">
+      <ul id="lightSliderHeader">
+        <li>
+          <img src="img/banners_top/1.jpeg">
+        </li>
+        <li>
+          <img src="img/banners_top/2.jpeg">
+        </li>
+        <li>
+          <img src="img/banners_top/6.jpeg">
+        </li>
+        <li>
+          <img src="img/banners_top/9.jpeg">
+        </li>
+      </ul>
 
-
-<div class="preloader">
-  <div class="container">
-    <div class="logo" data-aos="zoom-in">
-      <img src="/img/logo_start.png">
     </div>
-    <div class="preloader-text">
-      <div class="slogan" data-aos="fade-up" data-aos-delay="1000">Создаем сайты</div>
-      <div class="waiting" data-aos="zoom-in" data-aos-delay="1500">
-        <i class="fa-solid fa-spinner fa-spin-pulse"></i>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<header class="header">
-  <div class="container">
-    <div class="header__wrapper">
-      <div class="logo">
-        <img src="/img/logo_main.png">
-      </div>
-      <div class="header__menu menu-main">
-        <a class="header__menu-item">
-          <i class="fa-solid fa-chart-simple"></i>
-          <span>Menu 1</span>
-        </a>
-        <div class="header__menu-item menu-dropdown">
-          <span>Menu 2</span>
-          <div class="dropdown-block">
-            <a class="dropdown-block__wrapper">
-              <i class="fa-solid fa-chart-simple"></i>
-              <span>Menu sub item 1</span>
-            </a>
-            <a class="dropdown-block__wrapper">
-
-              <span>Menu sub item 2</span>
-            </a>
+    <div class="header-content">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header-block__left">
+            <div class="logo-main">
+              <img src="img/logo-main.png">
+            </div>
+            <div class="header-counter">
+              <div id="countdown" class="countdown">
+                <div class="countdown-number">
+                  <span class="days countdown-time">195</span>
+                  <span class="countdown-text">Дней</span>
+                </div>
+                <div class="countdown-number">
+                  <span class="hours countdown-time">01</span>
+                  <span class="countdown-text">Часов</span>
+                </div>
+                <div class="countdown-number">
+                  <span class="minutes countdown-time">53</span>
+                  <span class="countdown-text">Минут</span>
+                </div>
+                <div class="countdown-number">
+                  <span class="seconds countdown-time">55</span>
+                  <span class="countdown-text">Секунд</span>
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="header__menu">
+            <div class="header__menu menu-main">
+              <a class="header__menu-item">
+                <span>О выставке</span>
+              </a>
+              <a class="header__menu-item">
+                <span>Тематика</span>
+              </a>
+              <a class="header__menu-item">
+                <span>Экспонентам</span>
+              </a>
+              <a class="header__menu-item">
+                <span>Посетителям</span>
+              </a>
+              <a class="header__menu-item">
+                <span>Ьадиацентр</span>
+              </a>
+
+            </div>
+          </div>
+
         </div>
       </div>
-      <div class="header__menu menu-advanced">
-        <a class="header__menu-item">
-          <i>icon</i>
-          <span>Menu 1</span>
-        </a>
-        <div class="header__menu-item menu-dropdown">
-          <i>icon</i>
-          <span>Menu 1</span>
-          <div class="dropdown-block">
-            <a class="dropdown-block__wrapper">
-              <i>Icon</i>
-              <span>Menu sub item 1</span>
-            </a>
-            <a class="dropdown-block__wrapper right">
-              <i>Icon</i>
-              <span>Menu sub item 2</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-</header>
+  </header>
 
-Test564
+
 <script src="https://kit.fontawesome.com/2091d0a10d.js" crossorigin="anonymous"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/lightslider.js"></script>
 <script src="js/aos.js"></script>
-<script src="js/app.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
