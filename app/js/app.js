@@ -24,4 +24,17 @@ $(document).ready(function() {
     easing: 'ease'
   });
 
+
+  //left side in header
+  $(window).on('load resize', function() {
+    var width = $(window).width(),
+      cont = $('.container').width();
+
+    console.log(width);
+    console.log(cont);
+    console.log(((width - cont) / 2));
+
+    $('.header-block__left').css({'width': (width - cont) / 2, 'left': -(width - cont) / 2});
+
+  });
 });
