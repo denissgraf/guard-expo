@@ -2,12 +2,17 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
   <title>Страж</title>
   <script src="https://kit.fontawesome.com/2091d0a10d.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="font/gotham-pro/stylesheet.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="css/app.min.css">
+
   <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
 </head>
 <body>
@@ -460,52 +465,152 @@
         Спикеры
       </a>
       <div class="section-content">
-        <ul id="lightSliderSpeakers">
-          <li>
-            <div class="sp-item">
-              <div class="sp__photo">
-                <img src="img/speakers/1.png">
+        <div class="swiper speakersSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="sp-item">
+                <div class="sp__photo">
+                  <img src="img/speakers/1.png">
+                </div>
+                <div class="sp__name">Лепин Владимир Николаевич</div>
+                <div class="sp__desc">Генеральный директор</div>
+                <div class="sp__company">Группа компаний "Калашников"</div>
               </div>
-              <div class="sp__name">Лепин Владимир Николаевич</div>
-              <div class="sp__desc">Генеральный директор</div>
-              <div class="sp__company">Группа компаний "Калашников"</div>
             </div>
-          </li>
-          <li>
-            <div class="sp-item">
-              <div class="sp__photo">
-                <img src="img/speakers/2.png">
+            <div class="swiper-slide">
+              <div class="sp-item">
+                <div class="sp__photo">
+                  <img src="img/speakers/2.png">
+                </div>
+                <div class="sp__name">Степин Антон Сергеевич</div>
+                <div class="sp__desc">Генеральный директор</div>
+                <div class="sp__company">ООО "Омнитек-Н"</div>
               </div>
-              <div class="sp__name">Степин Антон Сергеевич</div>
-              <div class="sp__desc">Генеральный директор</div>
-              <div class="sp__company">ООО "Омнитек-Н"</div>
             </div>
-          </li>
-          <li>
-            <div class="sp-item">
-              <div class="sp__photo">
-                <img src="img/speakers/3.png">
+            <div class="swiper-slide">
+              <div class="sp-item">
+                <div class="sp__photo">
+                  <img src="img/speakers/3.png">
+                </div>
+                <div class="sp__name">Тменов Александр Владимирович</div>
+                <div class="sp__desc">Генеральный директор</div>
+                <div class="sp__company">ОАО "Завод имени В. А. Дектярёва"</div>
               </div>
-              <div class="sp__name">Тменов Александр Владимирович</div>
-              <div class="sp__desc">Генеральный директор</div>
-              <div class="sp__company">ОАО "Завод имени В. А. Дектярёва"</div>
             </div>
-          </li>
-          <li>
-            <div class="sp-item">
-              <div class="sp__photo">
-                <img src="img/speakers/4.png">
+            <div class="swiper-slide">
+              <div class="sp-item">
+                <div class="sp__photo">
+                  <img src="img/speakers/4.png">
+                </div>
+                <div class="sp__name">Злыднев Михаил Иванович</div>
+                <div class="sp__desc">Генеральный директор</div>
+                <div class="sp__company">ОАО "Научно-производственное предприятие КлАСС"</div>
               </div>
-              <div class="sp__name">Злыднев Михаил Иванович</div>
-              <div class="sp__desc">Генеральный директор</div>
-              <div class="sp__company">ОАО "Научно-производственное предприятие КлАСС"</div>
             </div>
-          </li>
-        </ul>
+            <div class="swiper-slide">
+              <div class="sp-item">
+                <div class="sp__photo">
+                  <img src="img/speakers/1.png">
+                </div>
+                <div class="sp__name">Лепин Владимир Николаевич</div>
+                <div class="sp__desc">Генеральный директор</div>
+                <div class="sp__company">Группа компаний "Калашников"</div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination-speaker"></div>
+        </div>
       </div>
     </div>
   </section>
 
+  <section class="content-section" id="mainPartners">
+    <div class="container">
+      <a href="#" class="section-title">
+        Партнеры
+      </a>
+      <div class="section-content">
+        <div class="swiper partnersSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="sp-item">
+                <div class="sp__photo">
+                  <img src="img/speakers/1.png">
+                </div>
+                <div class="sp__name">Лепин Владимир Николаевич</div>
+                <div class="sp__desc">Генеральный директор</div>
+                <div class="sp__company">Группа компаний "Калашников"</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sp-item">
+                <div class="sp__photo">
+                  <img src="img/speakers/2.png">
+                </div>
+                <div class="sp__name">Степин Антон Сергеевич</div>
+                <div class="sp__desc">Генеральный директор</div>
+                <div class="sp__company">ООО "Омнитек-Н"</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sp-item">
+                <div class="sp__photo">
+                  <img src="img/speakers/3.png">
+                </div>
+                <div class="sp__name">Тменов Александр Владимирович</div>
+                <div class="sp__desc">Генеральный директор</div>
+                <div class="sp__company">ОАО "Завод имени В. А. Дектярёва"</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sp-item">
+                <div class="sp__photo">
+                  <img src="img/speakers/4.png">
+                </div>
+                <div class="sp__name">Злыднев Михаил Иванович</div>
+                <div class="sp__desc">Генеральный директор</div>
+                <div class="sp__company">ОАО "Научно-производственное предприятие КлАСС"</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="sp-item">
+                <div class="sp__photo">
+                  <img src="img/speakers/1.png">
+                </div>
+                <div class="sp__name">Лепин Владимир Николаевич</div>
+                <div class="sp__desc">Генеральный директор</div>
+                <div class="sp__company">Группа компаний "Калашников"</div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination-partners"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer>
+    <div class="container">
+      <div class="footer-wrapper">
+
+        <div class="footer__left">
+          <div class="footer__title"></div>
+          <div class="footer-menu">
+            <div class="footer-menu__column">
+              <a href="" class="menu__item">1</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
   <script src="https://kit.fontawesome.com/2091d0a10d.js" crossorigin="anonymous"></script>
 <script src="js/jquery-3.7.1.min.js"></script>
