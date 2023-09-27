@@ -9,7 +9,6 @@ var swiperSpeaker = new Swiper(".speakersSwiper", {
   slidesPerView: 4,
   grabCursor: true,
   spaceBetween: 30,
-  loop: true,
   pagination: {
     el: ".swiper-pagination-speaker",
     clickable: true,
@@ -18,10 +17,9 @@ var swiperSpeaker = new Swiper(".speakersSwiper", {
 
 // speaker slider
 var swiperSpeaker = new Swiper(".partnersSwiper", {
-  slidesPerView: 4,
+  slidesPerView: 5,
   grabCursor: true,
   spaceBetween: 30,
-  loop: true,
   pagination: {
     el: ".swiper-pagination-partners",
     clickable: true,
