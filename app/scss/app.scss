@@ -862,7 +862,7 @@ footer {
     .footer-column {
       display: flex;
       flex-direction: column;
-      &.footer__main {
+      &.footer__left {
         .footer-menu {
           margin-right: 40px;
         }
@@ -874,6 +874,12 @@ footer {
         }
         .footer-menu__column {
           flex: 1 1 25%;
+          .footer-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+          }
         }
       }
       .footer__title {
@@ -909,7 +915,53 @@ footer {
             font-size: 18px;
             font-weight: 300;
             line-height: 1.5;
+            &.icon__tg {
+              margin-right: 15px;
+              -webkit-transition: all .3s;
+              -moz-transition: all .3s;
+              -ms-transition: all .3s;
+              -o-transition: all .3s;
+              transition: all .3s;
+
+              i {
+                font-size: 47px;
+                -webkit-transition: all .3s;
+                -moz-transition: all .3s;
+                -ms-transition: all .3s;
+                -o-transition: all .3s;
+                transition: all .3s;
+
+              }
+              &:hover {
+                i {
+                  color: #0088cc;
+                }
+              }
+            }
+            &.icon__youtube {
+              -webkit-transition: all .3s;
+              -moz-transition: all .3s;
+              -ms-transition: all .3s;
+              -o-transition: all .3s;
+              transition: all .3s;
+
+              i {
+                font-size: 48px;
+                -webkit-transition: all .3s;
+                -moz-transition: all .3s;
+                -ms-transition: all .3s;
+                -o-transition: all .3s;
+                transition: all .3s;
+
+              }
+              &:hover {
+                i {
+                  color: #c4302b;
+                }
+              }
+            }
           }
+
         }
       }
     }
