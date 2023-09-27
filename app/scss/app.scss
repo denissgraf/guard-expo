@@ -840,7 +840,7 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
-    height: fit-content;
+    height: 100%;
     overflow: hidden;
     img {
       width: 100%;
@@ -965,6 +965,12 @@ footer {
         }
       }
     }
+  }
+  .footer-bottom {
+    margin-top: 100px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
   }
 
 }
