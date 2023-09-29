@@ -41,6 +41,10 @@ body {
   display: none;
 }
 
+.menu-logo-mobile {
+  display: none;
+}
+
 .header {
   position: relative;
   .header-slider {
@@ -1471,6 +1475,18 @@ footer {
         }
       }
 
+    }
+  }
+
+  #infografic {
+    .section-content {
+      .logo {
+        flex-grow: 1;
+        width: 100% !important;
+      }
+      .infografic-item {
+        flex: 1 0 50%!important;
+      }
     }
   }
   footer {
