@@ -62,7 +62,7 @@ console.log(headHeight);
     var widthVideo = (cont * 0.56);
     $('.banners-2 .banners-item .banner__content .container').css({'width': "calc("+width2+"px - 10px)"});
     $('#mainVideo iframe').prop('height', widthVideo+"px");
-    $('.header-slider').css('height', headHeight+"px");
+    $('.header-slider').css('height', (headHeight + 20)+"px");
 
 
   });
