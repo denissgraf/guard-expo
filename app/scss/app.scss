@@ -1364,11 +1364,85 @@ footer {
           width: 100%;
           background: cornflowerblue;
           height: fit-content;
-          display: flex;
+          display: flex!important;
           flex-direction: column;
-          .header__menu-main {
+          z-index: 2;
+          .menu-logo-mobile {
+            max-width: 30%;
+            align-self: flex-start;
+            margin-top: -30px;
+            margin-left: 30px;
+            margin-bottom: 50px;
+          }
+          .header__menu-main, .header__menu-lang {
             display: flex;
             flex-direction: column !important;
+            align-self: flex-start;
+            margin-left: 30px;
+            .header__menu-item {
+              margin-right: 0;
+              text-align: left;
+              align-self: flex-start;
+
+              .item-title {
+                font-size: 1.5em!important;
+                line-height: 1.8;
+                &::after {
+                  margin-left: 10px;
+                  display: inline-block;
+                  font-style: normal;
+                  font-variant: normal;
+                  text-rendering: auto;
+                  -webkit-font-smoothing: antialiased;
+                  font-family: "Font Awesome 6 Free";
+                  font-weight: 900;
+                  content: "\f0d7";
+                  -webkit-transition: all .3s;
+                  -moz-transition: all .3s;
+                  -ms-transition: all .3s;
+                  -o-transition: all .3s;
+                  transition: all .3s;
+                }
+              }
+              &:hover, &.active {
+                .item-title {
+                  background: transparent!important;
+                  position: relative;
+                  &::after {
+                    -webkit-transform: rotate(180deg) translateY(50%);
+                    -moz-transform: rotate(180deg) translateY(50%);
+                    -ms-transform: rotate(180deg) translateY(50%);
+                    -o-transform: rotate(180deg) translateY(50%);
+                    transform: rotate(180deg) translateY(50%);
+                    top: 50%;
+                    position: absolute;
+                  }
+
+                }
+
+                .dropdown-items {
+                  position: relative;
+                  padding: 0 0 0 30px;
+                  .dropdown-items__wrapper {
+                    padding: 0;
+                    background: transparent;
+                    a {
+                      color: white;
+                      font-size: 1.3em;
+                      &:hover {
+                        color: getColor('red');
+                      }
+                    }
+
+                  }
+                }
+              }
+            }
+          }
+          .header__menu-lang {
+            padding-top: 30px;
+            border-top: 1px solid white;
+            margin: 30px 0 30px 40px !important;
           }
         }
       }

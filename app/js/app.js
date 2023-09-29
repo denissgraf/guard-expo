@@ -77,7 +77,18 @@ $(document).ready(function() {
     easing: 'ease'
   });
 
-
+  // mobile menu open/close
+  $(document).on('click', '.mobile-menu__btn', function(e) {
+    e.preventDefault();
+    console.log($(this));
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active');
+      $(document).find('.header__menu').removeClass('active');
+    } else {
+      $(this).addClass('active');
+      $(document).find('.header__menu').addClass('active');
+    }
+  });
 
 
   //left side in header
