@@ -410,14 +410,17 @@ body {
           flex-direction: column;
           max-width: 200px;
           margin-left: 15px;
+          text-transform: uppercase;
           .text__big {
             font-size: 40px;
             font-weight: 600;
             white-space: pre-wrap;
+            text-transform: uppercase;
           }
           .text__normal {
             font-size: 20px;
             font-weight: 600;
+            text-transform: uppercase;
           }
         }
       }
