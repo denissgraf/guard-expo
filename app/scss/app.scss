@@ -204,7 +204,7 @@ body {
               }
 
             }
-            &:hover, &.active {
+            &.active {
               .item-title {
                 background: getColor('white');
                 color: getColor('red');
@@ -1437,7 +1437,7 @@ footer {
                   transition: all .3s;
                 }
               }
-              &:hover, &.active {
+              &.active {
                 .item-title {
                   background: transparent!important;
                   position: relative;
