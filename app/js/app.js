@@ -121,19 +121,6 @@ $(document).ready(function() {
     } else {
       $('.header-slider').css('height', '');
       $('.banners-2 .banners-item .banner__content .container').css({'width': "calc("+width2+"px - 10px)"});
-      $(document).on('mouseOver', '.menu-dropdown .item-title', function(e) {
-        e.preventDefault();
-        console.log('menu click desktop');
-        console.log($(this).parent());
-        if ($(this).parent().hasClass('active')) {
-          $(this).parent().removeClass('active');
-        } else {
-          console.log($('.menu-dropdown.active'));
-          $('.menu-dropdown.active').removeClass('active');
-          $(this).parent().addClass('active');
-        }
-
-      });
 
     }
 
