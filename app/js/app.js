@@ -56,12 +56,13 @@ var swiperSpeaker = new Swiper(".partnersSwiper", {
 
 
 $(document).ready(function() {
-
-
-  setTimeout (function(){
-    var preloader = $(document).find('.preloader');
-    preloader.addClass('hide');
-  }, 5000);
+  $(document).mouseup( function(e){ // событие клика по веб-документу
+    var div = $( ".menu-dropdown.active" ); // тут указываем ID элемента
+    if ( !div.is(e.target) // если клик был не по нашему блоку
+      && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
+      div.removeClass('active'); // скрываем его
+    }
+  });
 
 
   // header slider
@@ -80,7 +81,6 @@ $(document).ready(function() {
   // mobile menu open/close
   $(document).on('click', '.mobile-menu__btn', function(e) {
     e.preventDefault();
-    console.log($(this));
     if ($(this).hasClass('active')) {
       $(this).removeClass('active');
       $(document).find('.header__menu').removeClass('active');
@@ -92,8 +92,6 @@ $(document).ready(function() {
 
   $(document).on('click', '.menu-dropdown .item-title', function(e) {
     e.preventDefault();
-    console.log('menu click');
-    console.log($(this).parent());
     if ($(this).parent().hasClass('active')) {
       $(this).parent().removeClass('active');
     } else {
