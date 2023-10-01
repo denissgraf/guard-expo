@@ -1419,6 +1419,8 @@ footer {
             align-self: flex-start;
             margin-left: 30px;
             width: calc(100% - 45px);
+            background: transparent!important;
+
             .header__menu-item {
               margin-right: 0;
               text-align: left;
@@ -1426,10 +1428,13 @@ footer {
               width: 100%;
               position: relative;
               right: 10px;
+              background: transparent!important;
 
               .item-title {
                 font-size: 1.5em!important;
                 line-height: 1.8;
+                background: transparent!important;
+
                 &::after {
                   margin-left: 10px;
                   display: inline-block;
@@ -1445,6 +1450,8 @@ footer {
                   -ms-transition: all .3s;
                   -o-transition: all .3s;
                   transition: all .3s;
+                  background: transparent!important;
+
                 }
               }
               &.active {
@@ -1461,6 +1468,8 @@ footer {
                     transform: rotate(180deg) translateY(50%);
                     top: 50%;
                     position: absolute;
+                    background: transparent!important;
+
                   }
 
                 }
@@ -1469,10 +1478,11 @@ footer {
                   position: relative;
                   padding: 0 0 0 30px;
                   width: 100%;
+                  background: transparent!important;
                   .dropdown-items__wrapper {
                     padding: 0;
-                    background: transparent;
                     position: relative;
+                    background: transparent!important;
                     a {
                       color: white;
                       font-size: 1.3em;
@@ -1481,6 +1491,8 @@ footer {
                       white-space: pre-wrap;
                       position: relative;
                       right: 10px;
+                      background: transparent!important;
+
                       &:hover {
                         color: getColor('red');
                       }
