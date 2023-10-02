@@ -1635,6 +1635,21 @@ footer {
     }
   }
 
+  .section-title {
+    margin: 70px 0;
+
+    .section-title__text {
+      font-size: 26px;
+      flex-grow: 1;
+      width: 100%;
+      margin: 0!important;
+
+    }
+    .section-title__btn {
+      margin-top: 30px;
+    }
+
+  }
   #infografic {
     .section-content {
       .logo {
