@@ -1643,6 +1643,7 @@ footer {
       }
       .infografic-item {
         flex: 1 0 50%!important;
+        justify-content: flex-start;
         max-width: 50%;
         .item-text {
           .text__normal {
