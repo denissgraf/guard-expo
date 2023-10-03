@@ -267,7 +267,7 @@ body {
         color: white;
         font-size: 24px;
         line-height: 1.4em;
-        font-weight: 400;
+        font-weight: 600;
         text-align: center;
       }
       .header__advanced-menu {
@@ -281,7 +281,7 @@ body {
           flex-direction: row;
           align-items: center;
           justify-content: space-between;
-          font-size: 24px;
+          font-size: 28px;
           padding-left: 30px;
           padding-right: 30px;
           width: 33.3%;
@@ -294,7 +294,11 @@ body {
           -ms-transition: all .3s;
           -o-transition: all .3s;
           transition: all .3s;
-          font-weight: 400;
+          font-weight: 600;
+          span {
+            font-size: 20px;
+            font-weight: 600;
+          }
           .arrow-right i {
             font-size: 24px;
           }
