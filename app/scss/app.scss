@@ -17,7 +17,7 @@
 
 html {
   border: 0;
-  background: getColor('white');
+  background: transparent;
   top: 0;
   left: 0;
   height: 100%;
@@ -31,7 +31,13 @@ body {
   top: 0;
   left: 0;
   position: relative;
+  background: url("../img/expo_bgr1.png");
+  background-position: left top;
+  background-repeat: repeat;
+  background-size: 400px;
+
 }
+
 
 
 .socials-mobile {
@@ -320,6 +326,24 @@ body {
   align-items: center;
   color: white;
 }
+section {
+  .section-content {
+    position: relative;
+    &:before {
+      display: block;
+      width: calc(100% + 20px);
+      height: calc(100% + 20px);
+      content: '';
+      left: -10px;
+      bottom: -10px;
+      right: -10px;
+      top: -10px;
+      position: absolute;
+      background: white;
+    }
+  }
+}
+
 
 .section-title {
   display: flex;
@@ -370,12 +394,14 @@ body {
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
+      position: relative;
       .logo {
         display: flex;
         flex-direction: column;
         width: 33%;
         align-items: flex-start;
         justify-content: flex-start;
+        position: relative;
         img {
           width: 250px;
 
@@ -387,6 +413,7 @@ body {
         }
       }
       .infografic-item {
+        position: relative;
         -webkit-flex: 1 0 33%;
         -moz-flex: 1 0 33%;
         -ms-flex: 1 0 33%;
@@ -394,7 +421,7 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         margin: 50px 0px;
         .item-image {
           width: 70px;

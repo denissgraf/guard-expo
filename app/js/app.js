@@ -1,8 +1,3 @@
-AOS.init({
-  easing: 'ease-out-back',
-  duration: 1000,
-
-});
 
 // speaker slider
 var swiperSpeaker = new Swiper(".speakersSwiper", {
